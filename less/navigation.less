@@ -1,1 +1,40 @@
 // Navigation Styles here
+nav {
+	border-bottom: 2px dashed @navigation-border;
+	.navBar {
+		display: flex;
+		width: 100%;
+		padding: 2vh 0;
+		@media @mobile {
+			flex-direction: column;
+		}
+		.navText {
+			width: 50%;
+			@media @mobile {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			h1 {
+				font-family: "Indie Flower", cursive;
+				padding: 0;
+			}
+		}
+		.navLinks {
+			display: flex;
+			justify-content: flex-end;
+			width: 50%;
+			@media @mobile {
+				width: 100%;
+				justify-content: space-around;
+			}
+			a {
+				text-decoration: none;
+				padding: 1vh 1.3vw;
+				font-size: 1.6rem;
+				font-family: "Roboto", sans-serif;
+			}
+		}
+	}
+}
